@@ -1,0 +1,19 @@
+controller_list:
+  - name: fake_niryo_arm_controller
+    joints:
+      - niryo_joint1
+      - niryo_joint2
+      - niryo_joint3
+      - niryo_joint4
+      - niryo_joint5
+      - niryo_joint6
+      - niryo_joint7
+  - name: fake_hand_controller
+    joints:
+      - niryo_finger_joint1
+      - niryo_finger_joint2
+initial:
+  - group: niryo_arm
+    pose: ready
+  - group: hand
+    pose: open

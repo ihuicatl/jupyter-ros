@@ -1,0 +1,5 @@
+niryo_jupyros
+/home/ihuicatl/Robots/repos/HiWi/robotic-systems-lab/Tutorials_JROS/ws_jupyned/devel/.private/niryo_jupyros/cmake.lock /home/ihuicatl/Robots/repos/HiWi/robotic-systems-lab/Tutorials_JROS/ws_jupyned/devel/./cmake.lock
+/home/ihuicatl/Robots/repos/HiWi/robotic-systems-lab/Tutorials_JROS/ws_jupyned/devel/.private/niryo_jupyros/lib/pkgconfig/niryo_jupyros.pc /home/ihuicatl/Robots/repos/HiWi/robotic-systems-lab/Tutorials_JROS/ws_jupyned/devel/lib/pkgconfig/niryo_jupyros.pc
+/home/ihuicatl/Robots/repos/HiWi/robotic-systems-lab/Tutorials_JROS/ws_jupyned/devel/.private/niryo_jupyros/share/niryo_jupyros/cmake/niryo_jupyrosConfig-version.cmake /home/ihuicatl/Robots/repos/HiWi/robotic-systems-lab/Tutorials_JROS/ws_jupyned/devel/share/niryo_jupyros/cmake/niryo_jupyrosConfig-version.cmake
+/home/ihuicatl/Robots/repos/HiWi/robotic-systems-lab/Tutorials_JROS/ws_jupyned/devel/.private/niryo_jupyros/share/niryo_jupyros/cmake/niryo_jupyrosConfig.cmake /home/ihuicatl/Robots/repos/HiWi/robotic-systems-lab/Tutorials_JROS/ws_jupyned/devel/share/niryo_jupyros/cmake/niryo_jupyrosConfig.cmake
