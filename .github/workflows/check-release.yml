@@ -1,4 +1,4 @@
-name: "Check Release"
+name: Check Release
 on:
   push:
     branches:
@@ -27,10 +27,10 @@ inputs:
 
 jobs:
   check_release:
-    using: "composite"
     runs-on: ubuntu-latest
     steps:
-      - shell: bash -eux {0}
+      - name: Install releaser
+        shell: bash -eux {0}
         id: install-releaser
         run: |
           # Install Jupyter Releaser from git unless we are testing Releaser itself
@@ -38,8 +38,8 @@ jobs:
           then
               pip install -q git+https://github.com/jupyter-server/jupyter_releaser.git@v2
           fi
-
-      - id: prep-release
+      - name: Prep release
+        id: prep-release
         shell: bash -eux {0}
         run: |
           export RH_DRY_RUN="true"
@@ -48,7 +48,8 @@ jobs:
           export RH_STEPS_TO_SKIP=${{ inputs.steps_to_skip }}
           python -m jupyter_releaser.actions.prep_release
 
-      - id: populate-release
+      - name: Populate release
+        id: populate-release
         shell: bash -eux {0}
         run: |
           export RH_DRY_RUN="true"
@@ -57,7 +58,8 @@ jobs:
           export RH_STEPS_TO_SKIP=${{ inputs.steps_to_skip }}
           python -m jupyter_releaser.actions.populate_release
 
-      - id: finalize-release
+      - name: Finalize release
+        id: finalize-release
         shell: bash -eux {0}
         run: |
           export RH_DRY_RUN="true"
