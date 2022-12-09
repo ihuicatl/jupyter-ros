@@ -1,6 +1,6 @@
 {
   "name": "jupyter-ros",
-  "version": "0.1.0",
+  "version": "0.6.1",
   "description": "Jupyter widgets for the ROS ecosystem.",
   "keywords": [
     "jupyter",
