@@ -10,19 +10,6 @@ on:
 permissions:
   contents: write
 
-description: "Run through a dry run release cycle"
-inputs:
-  token:
-    description: "GitHub access token"
-    required: true
-  version_spec:
-    description: "New Version Specifier"
-    required: false
-    default: ""
-  steps_to_skip:
-    description: "Comma separated list of steps to skip"
-    required: false
-
 jobs:
   check_release:
     runs-on: ubuntu-latest
