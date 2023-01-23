@@ -34,13 +34,13 @@ dynamic = ["version", "description", "authors", "urls", "keywords"]
 env = ["click", "jupyter_releaser~=0.22"]
 
 [tool.hatch.version]
-source = "js/package.json"
+source = "nodejs"
 
 [tool.hatch.metadata.hooks.nodejs]
-fields = ["description", "authors", "urls"]
+fields = ["description", "authors", "urls", "version"]
 
 [tool.hatch.build.targets.sdist]
-artifacts = ["jupyter-ros/labextension"]
+artifacts = ["jupyros/labextension", "jupyros/nbextension"]
 exclude = [".github"]
 
 [tool.hatch.build.targets.wheel.shared-data]
