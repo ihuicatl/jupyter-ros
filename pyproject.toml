@@ -34,7 +34,7 @@ dynamic = ["version", "description", "authors", "urls", "keywords"]
 env = ["click", "jupyter_releaser~=0.22"]
 
 [tool.hatch.version]
-source = "nodejs"
+source = "js/package.json"
 
 [tool.hatch.metadata.hooks.nodejs]
 fields = ["description", "authors", "urls"]
